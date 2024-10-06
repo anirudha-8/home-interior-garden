@@ -60,7 +60,7 @@ const HomeInteriorGarden = () => {
 									position: "relative",
 									top: "5%",
 									left: "2%",
-									zIndex: 2
+									zIndex: 2,
 									width: "70%",
 									height: "auto",
 									marginTop: "10px",
@@ -71,8 +71,8 @@ const HomeInteriorGarden = () => {
 									src={img1}
 									alt="Person spraying plant"
 									layout="responsive"
-									width={200} 
-									height={200} 
+									width={200}
+									height={200}
 								/>
 							</Box>
 						</Box>
@@ -88,7 +88,7 @@ const HomeInteriorGarden = () => {
 							{/* Background Rectangle */}
 							<Box
 								sx={{
-									backgroundColor: "#ffffff", 
+									backgroundColor: "#ffffff",
 									top: "-100%",
 									left: "30%",
 									width: "39%",
@@ -115,8 +115,8 @@ const HomeInteriorGarden = () => {
 									src={img2}
 									alt="Plant in a pot"
 									layout="responsive"
-									width={200} 
-									height={200} 
+									width={200}
+									height={200}
 								/>
 							</Box>
 						</Box>
@@ -199,10 +199,10 @@ const HomeInteriorGarden = () => {
 						{/* Icons Section */}
 						<Grid
 							container
-							spacing={4} 
+							spacing={4}
 							sx={{
 								mt: 1,
-								justifyContent: "center", 
+								justifyContent: "center",
 							}}
 						>
 							<Grid item xs={12} md={6}>
