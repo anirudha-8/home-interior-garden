@@ -191,6 +191,11 @@ const HomeInteriorGarden = () => {
 								borderRadius: 0,
 								px: "2rem",
 								py: ".4rem",
+								transition: "0.4s all",
+								"&:hover": {
+									color: "white",
+									backgroundColor: theme.palette.ternary.main,
+								},
 							}}
 						>
 							shop now
