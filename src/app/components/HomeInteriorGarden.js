@@ -3,11 +3,16 @@ import React from "react";
 import theme from "../../../theme";
 import IconComponent from "./IconComponent";
 
+// images paths
+import img1 from "../../../public/images/img-1.png";
+import img2 from "../../../public/images/img-2.jpeg";
+
 // icons paths
 import icon1 from "../../../public/icons/icon-1.png";
 import icon2 from "../../../public/icons/icon-2.png";
 import icon3 from "../../../public/icons/icon-3.png";
 import icon4 from "../../../public/icons/icon-4.png";
+import Image from "next/image";
 
 const HomeInteriorGarden = () => {
 	return (
@@ -25,9 +30,97 @@ const HomeInteriorGarden = () => {
 			}}
 		>
 			<Box sx={{ padding: "2rem" }}>
-				<Grid container space={2}>
+				<Grid container spacing={4}>
 					{/* left column for images */}
-					<Grid item xs={12} lg={6}></Grid>
+					<Grid item xs={12} lg={6}>
+						{/* First Image with Background Rectangle */}
+						<Box
+							sx={{
+								position: "relative",
+								width: {
+									xs: "100%",
+									sm: "100%",
+								},
+								height: "100%",
+							}}
+						>
+							{/* Background Rectangle */}
+							<Box
+								sx={{
+									backgroundColor: "#8B9C75",
+									width: "50%",
+									height: "65%",
+									position: "absolute",
+									zIndex: 1,
+								}}
+							/>
+							{/* First Image */}
+							<Box
+								sx={{
+									position: "relative",
+									top: "5%",
+									left: "2%",
+									zIndex: 2
+									width: "70%",
+									height: "auto",
+									marginTop: "10px",
+									marginLeft: "10px",
+								}}
+							>
+								<Image
+									src={img1}
+									alt="Person spraying plant"
+									layout="responsive"
+									width={200} 
+									height={200} 
+								/>
+							</Box>
+						</Box>
+
+						{/* Second Image with Background Rectangle */}
+						<Box
+							sx={{
+								position: "relative",
+								width: "100%",
+								height: "50%",
+							}}
+						>
+							{/* Background Rectangle */}
+							<Box
+								sx={{
+									backgroundColor: "#ffffff", 
+									top: "-100%",
+									left: "30%",
+									width: "39%",
+									height: "44%",
+									position: "absolute",
+									zIndex: 3,
+								}}
+							/>
+							{/* Second Image */}
+							<Box
+								sx={{
+									position: "relative",
+									top: "-95%",
+									left: "33%",
+									zIndex: 2,
+									width: "55%",
+									height: "50%",
+									marginBottom: "20px",
+									marginRight: "20px",
+									zIndex: 4,
+								}}
+							>
+								<Image
+									src={img2}
+									alt="Plant in a pot"
+									layout="responsive"
+									width={200} 
+									height={200} 
+								/>
+							</Box>
+						</Box>
+					</Grid>
 
 					{/* right column for texts */}
 					<Grid item xs={12} lg={6}>
@@ -90,7 +183,7 @@ const HomeInteriorGarden = () => {
 							mental health and work performance.
 						</Typography>
 						<Button
-							contained
+							variant="contained"
 							sx={{
 								background: "transparent",
 								color: theme.palette.ternary.main,
@@ -106,10 +199,10 @@ const HomeInteriorGarden = () => {
 						{/* Icons Section */}
 						<Grid
 							container
-							spacing={4} // Adjust the spacing to your preference
+							spacing={4} 
 							sx={{
 								mt: 1,
-								justifyContent: "center", // Center the icons on smaller screens
+								justifyContent: "center", 
 							}}
 						>
 							<Grid item xs={12} md={6}>
