@@ -21,6 +21,18 @@ const IconComponent = ({ iconSrc, altText, heading, subHeading }) => {
 						backgroundImage: `url(${iconBg.src})`,
 						backgroundSize: "cover",
 						backgroundPosition: "center",
+						cursor: "pointer",
+						"&:hover img": {
+							animation: "shake 0.5s", // Trigger shake animation for the image
+							animationTimingFunction: "ease-in-out",
+						},
+						"@keyframes shake": {
+							"0%": { transform: "translateX(0)" },
+							"25%": { transform: "translateX(-5px)" },
+							"50%": { transform: "translateX(5px)" },
+							"75%": { transform: "translateX(-5px)" },
+							"100%": { transform: "translateX(0)" },
+						},
 					}}
 				>
 					<Image src={iconSrc} alt={altText} width={35} height={35} />
