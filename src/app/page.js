@@ -1,10 +1,13 @@
-import Image from "next/image";
+"use client";
+
 import HomeInteriorGarden from "./components/HomeInteriorGarden";
+import Header from "./components/Header";
 
 export default function Home() {
 	return (
 		<>
-			<HomeInteriorGarden />
+			<Header />
+			{/* <HomeInteriorGarden /> */}
 		</>
 	);
 }
