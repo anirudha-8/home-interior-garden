@@ -32,9 +32,9 @@ const Header = () => {
 				<Typography variant="h6" component="div">
 					<Box
 						component="img"
-						src="/images/logo.png" // Add your logo image path here
+						src="/images/logo.png"
 						alt="logo image"
-						sx={{ height: { xs: "40px", md: "50px" } }} // Responsive height
+						sx={{ height: { xs: "40px", md: "50px" } }}
 					/>
 				</Typography>
 
@@ -51,11 +51,11 @@ const Header = () => {
 								key={item}
 								onClick={() => handleNavigation(route)}
 								sx={{
-									color: isActive ? "#ff5722" : "#fff", // Active link color
+									color: isActive ? "#ff5722" : "#fff",
 									textTransform: "none",
 									fontWeight: "500",
-									textDecoration: "none", // Remove underline
-									"&:hover": { color: "#ff5722" }, // Hover effect
+									textDecoration: "none",
+									"&:hover": { color: "#ff5722" },
 								}}
 							>
 								{item}

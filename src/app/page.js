@@ -1,12 +1,10 @@
-"use client";
-
+import HeroSection from "./components/hero-section/HeroSection";
 import HomeInteriorGarden from "./components/HomeInteriorGarden";
-import Header from "./components/Header";
 
 export default function Home() {
 	return (
 		<>
-			<Header />
+			<HeroSection />
 			{/* <HomeInteriorGarden /> */}
 		</>
 	);
